@@ -1,0 +1,53 @@
+\documentclass[landscape, a4paper, parskip=half, DIV=13]{scrartcl}
+\usepackage[top=1.25cm, bottom=1.0cm, left=7cm, right=7cm, marginparwidth=6.0cm, marginparsep=0pt]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric}
+\usepackage{fontspec}
+\setmainfont{Tex Gyre Schola}
+%\setmainfont[Scale=0.95]{Century Gothic}
+\usepackage{contour}
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
+\usepackage{booktabs}
+\usepackage{lipsum}
+\usepackage{marginnote}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{stealthships}
+
+%\setkomafont{section}{\setmainfont{Tex Gyre Schola}\LARGE\textbf}
+\setkomafont{section}{\setmainfont[Scale=0.95]{Century Gothic}\LARGE\bfseries}
+
+% Adjust spacing before and after section headings
+\RedeclareSectionCommand[
+  runin=false,
+  beforeskip=1.0\baselineskip,
+  afterskip=0.0\baselineskip
+]{section}
+
+
+\pagestyle{empty}
+\begin{document}
+{
+%\setmainfont[Scale=2.5]{Tex Gyre Schola}
+\setmainfont[Scale=2.5]{Century Gothic}
+\begin{center}
+\Huge \textbf{Cryptoglyph}
+\end{center}
+}
+%\marginnote{\center\includegraphics[height=2.5cm]{elephant.png}}[-4.125cm]
+%\reversemarginpar\marginnote{\center\includegraphics[height=2.5cm]{donkey.png}}[-4.125cm]
+
+\vspace{0.0cm}
+\vspace{-0.5cm}
+
+\begin{center}
+{\setmainfont{Century Gothic}
+\tiny
+\scalebox{2.4}{
+\input{secret_share_1.tex}
+}%
+}
+\end{center}
+\end{document}

@@ -1,0 +1,47 @@
+\documentclass{standalone}
+
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\usepackage[export]{animate}
+
+\begin{document}
+    \begin{animateinline}[loop]{6}
+%    \multiframe{13}{rOffset=0+1/12}{
+%		\begin{tikzpicture}[x=1in, y=1in]
+%			\node[inner sep=0pt, opacity=\rOffset] at (0,0) {\includegraphics{thumbnail_secret_share_0.png}};
+%			\node[inner sep=0pt, opacity=\rOffset] at (0,0) {\includegraphics{thumbnail_secret_share_1.png}};
+%			\node[inner sep=0pt, opacity = 1.0-\rOffset] at (0,0) {\includegraphics{thumbnail_high_contrast.png}};
+%			\path (-9.45, -7.5) -- (9.45, 7.5);
+%		\end{tikzpicture}
+%	}
+%	\newframe
+    \multiframe{7}{rOffset=0+3/6}{
+		\begin{tikzpicture}[x=1in, y=1in]
+			\node[inner sep=0pt] at (0,-\rOffset) {\includegraphics{thumbnail_secret_share_0.png}};
+			\node[inner sep=0pt] at (0,\rOffset) {\includegraphics{thumbnail_secret_share_1.png}};
+			\path (-9.45, -7.5) -- (9.45, 7.5);
+		\end{tikzpicture}
+	}
+	\newframe
+    \multiframe{7}{rOffset=0+3/6}{
+		\begin{tikzpicture}[x=1in, y=1in]
+			\node[inner sep=0pt] at (0,-3+\rOffset) {\includegraphics{thumbnail_secret_share_0.png}};
+			\node[inner sep=0pt] at (0,3-\rOffset) {\includegraphics{thumbnail_secret_share_1.png}};
+			\path (-9.45, -7.5) -- (9.45, 7.5);
+		\end{tikzpicture}
+	}
+%	\newframe
+%    \multiframe{13}{rOffset=0+1/12}{
+%		\begin{tikzpicture}[x=1in, y=1in]
+%			\node[inner sep=0pt, opacity=1.0-\rOffset] at (0,0) {\includegraphics{thumbnail_secret_share_0.png}};
+%			\node[inner sep=0pt, opacity=1.0-\rOffset] at (0,0) {\includegraphics{thumbnail_secret_share_1.png}};
+%			\node[inner sep=0pt, opacity = \rOffset] at (0,0) {\includegraphics{thumbnail_high_contrast.png}};
+%			\path (-9.45, -7.5) -- (9.45, 7.5);
+%		\end{tikzpicture}
+%	}
+	\end{animateinline}
+	
+\end{document}
+

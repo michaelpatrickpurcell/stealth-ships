@@ -1,0 +1,158 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric}
+\usepackage{stealthships}
+\usepackage{fontspec}
+\setmainfont[Scale=0.95]{Century Gothic}
+\begin{document}
+\begin{tikzpicture}
+\Huge
+\node at (0, 1.2in) {\textbf{Cryptoglyph}};
+
+\foreach \i in {-0.891, -0.693, -0.495, -0.297, -0.099, 0.099, 0.297, 0.495, 0.693, 0.891}
+	\foreach \j in {-0.891, -0.693, -0.495, -0.297, -0.099, 0.099, 0.297, 0.495, 0.693, 0.891}
+		\node[draw, thin, lightgray!25, inner sep=0pt, minimum width=0.198in, minimum height=0.198in] at (\i in, \j in) {};
+
+\foreach \i in {-0.792, -0.396, 0, 0.396, 0.792}
+	\foreach \j in {-0.792, -0.396, 0, 0.396, 0.792}
+		\node[draw, thin, gray, inner sep=0pt, minimum width=0.396in, minimum height=0.396in] at (\i in, \j in) {};
+
+\normalsize
+
+%\foreach \i/\k in {-0.792/A, -0.396/B, 0/C, 0.396/D, 0.792/E}
+%	\node[inner sep=0pt, minimum width=0.396in, minimum height=0.396in] at (\i in, -1.188in) {\k};
+
+\foreach \i/\k in {-0.891/A, -0.693/B, -0.495/C, -0.297/D, -0.099/E, 0.099/F, 0.297/G, 0.495/H, 0.693/I, 0.891/J}
+	\node[inner sep=0pt, minimum width=0.396in, minimum height=0.198in] at (\i in, -1.099in) {\k};
+
+%\foreach \j/\k in {-0.792/5, -0.396/4, 0/3, 0.396/2, 0.792/1}
+%	\node[inner sep=0pt, minimum width=0.396in, minimum height=0.396in] at (-1.188in, \j in) {\k};
+
+%\foreach \j/\k in {-0.792/5, -0.396/4, 0/3, 0.396/2, 0.792/1}
+%	\node[inner sep=0pt, minimum width=0.396in, minimum height=0.396in] at (1.188in, \j in) {\phantom{\k}};
+
+\foreach \i/\k in {-0.891/10, -0.693/9, -0.495/8, -0.297/7, -0.099/6, 0.099/5, 0.297/4, 0.495/3, 0.693/2, 0.891/1}
+	\node[inner sep=0pt, minimum width=0.396in, minimum height=0.198in] at (-1.099in, \i in) {\k};
+
+\foreach \i/\k in {-0.891/10, -0.693/9, -0.495/8, -0.297/7, -0.099/6, 0.099/5, 0.297/4, 0.495/3, 0.693/2, 0.891/1}
+	\node[inner sep=0pt, minimum width=0.396in, minimum height=0.198in] at (1.099in, \i in) {\phantom{\k}};
+
+
+%\node[draw, thin, inner sep=0pt, minimum width=0.396in, minimum height=0.396in] at (-1.188in, 1.188in) {};
+
+\node[inner sep=0pt] at (-0.891in, 0.891in) {\drawtwostar{}};
+\node[inner sep=0pt] at (-0.693in, 0.891in) {\drawonestar{}};
+\node[inner sep=0pt] at (-0.495in, 0.891in) {\drawonestar{}};
+\node[inner sep=0pt] at (-0.297in, 0.891in) {\drawtwostar{}};
+\node[inner sep=0pt] at (-0.099in, 0.891in) {\drawtwostar{}};
+\node[inner sep=0pt] at (0.099in, 0.891in) {\drawonestar{}};
+\node[inner sep=0pt] at (0.297in, 0.891in) {\drawonestar{}};
+\node[inner sep=0pt] at (0.495in, 0.891in) {\drawtwostar{}};
+\node[inner sep=0pt] at (0.693in, 0.891in) {\drawtwostar{}};
+\node[inner sep=0pt] at (0.891in, 0.891in) {\drawonestar{}};
+
+\node[inner sep=0pt] at (-0.891in, 0.693in) {\drawfourstar{}};
+\node[inner sep=0pt] at (-0.693in, 0.693in) {\drawthreestar{}};
+\node[inner sep=0pt] at (-0.495in, 0.693in) {\drawthreestar{}};
+\node[inner sep=0pt] at (-0.297in, 0.693in) {\drawfourstar{}};
+\node[inner sep=0pt] at (-0.099in, 0.693in) {\drawthreestar{}};
+\node[inner sep=0pt] at (0.099in, 0.693in) {\drawfourstar{}};
+\node[inner sep=0pt] at (0.297in, 0.693in) {\drawthreestar{}};
+\node[inner sep=0pt] at (0.495in, 0.693in) {\drawfourstar{}};
+\node[inner sep=0pt] at (0.693in, 0.693in) {\drawthreestar{}};
+\node[inner sep=0pt] at (0.891in, 0.693in) {\drawfourstar{}};
+
+
+\node[inner sep=0pt] at (-0.891in, 0.495in) {\drawonestar{}};
+\node[inner sep=0pt] at (-0.693in, 0.495in) {\drawtwostar{}};
+\node[inner sep=0pt] at (-0.495in, 0.495in) {\drawtwostar{}};
+\node[inner sep=0pt] at (-0.297in, 0.495in) {\drawonestar{}};
+\node[inner sep=0pt] at (-0.099in, 0.495in) {\drawonestar{}};
+\node[inner sep=0pt] at (0.099in, 0.495in) {\drawtwostar{}};
+\node[inner sep=0pt] at (0.297in, 0.495in) {\drawonestar{}};
+\node[inner sep=0pt] at (0.495in, 0.495in) {\drawtwostar{}};
+\node[inner sep=0pt] at (0.693in, 0.495in) {\drawtwostar{}};
+\node[inner sep=0pt] at (0.891in, 0.495in) {\drawonestar{}};
+
+\node[inner sep=0pt] at (-0.891in, 0.297in) {\drawfourstar{}};
+\node[inner sep=0pt] at (-0.693in, 0.297in) {\drawthreestar{}};
+\node[inner sep=0pt] at (-0.495in, 0.297in) {\drawfourstar{}};
+\node[inner sep=0pt] at (-0.297in, 0.297in) {\drawthreestar{}};
+\node[inner sep=0pt] at (-0.099in, 0.297in) {\drawfourstar{}};
+\node[inner sep=0pt] at (0.099in, 0.297in) {\drawthreestar{}};
+\node[inner sep=0pt] at (0.297in, 0.297in) {\drawthreestar{}};
+\node[inner sep=0pt] at (0.495in, 0.297in) {\drawfourstar{}};
+\node[inner sep=0pt] at (0.693in, 0.297in) {\drawfourstar{}};
+\node[inner sep=0pt] at (0.891in, 0.297in) {\drawthreestar{}};
+
+
+\node[inner sep=0pt] at (-0.891in, 0.099in) {\drawtwostar{}};
+\node[inner sep=0pt] at (-0.693in, 0.099in) {\drawonestar{}};
+\node[inner sep=0pt] at (-0.495in, 0.099in) {\drawtwostar{}};
+\node[inner sep=0pt] at (-0.297in, 0.099in) {\drawonestar{}};
+\node[inner sep=0pt] at (-0.099in, 0.099in) {\drawonestar{}};
+\node[inner sep=0pt] at (0.099in, 0.099in) {\drawtwostar{}};
+\node[inner sep=0pt] at (0.297in, 0.099in) {\drawonestar{}};
+\node[inner sep=0pt] at (0.495in, 0.099in) {\drawtwostar{}};
+\node[inner sep=0pt] at (0.693in, 0.099in) {\drawonestar{}};
+\node[inner sep=0pt] at (0.891in, 0.099in) {\drawtwostar{}};
+
+\node[inner sep=0pt] at (-0.891in, -0.099in) {\drawthreestar{}};
+\node[inner sep=0pt] at (-0.693in, -0.099in) {\drawfourstar{}};
+\node[inner sep=0pt] at (-0.495in, -0.099in) {\drawfourstar{}};
+\node[inner sep=0pt] at (-0.297in, -0.099in) {\drawthreestar{}};
+\node[inner sep=0pt] at (-0.099in, -0.099in) {\drawthreestar{}};
+\node[inner sep=0pt] at (0.099in, -0.099in) {\drawfourstar{}};
+\node[inner sep=0pt] at (0.297in, -0.099in) {\drawthreestar{}};
+\node[inner sep=0pt] at (0.495in, -0.099in) {\drawfourstar{}};
+\node[inner sep=0pt] at (0.693in, -0.099in) {\drawthreestar{}};
+\node[inner sep=0pt] at (0.891in, -0.099in) {\drawfourstar{}};
+
+
+\node[inner sep=0pt] at (-0.891in, -0.297in) {\drawtwostar{}};
+\node[inner sep=0pt] at (-0.693in, -0.297in) {\drawonestar{}};
+\node[inner sep=0pt] at (-0.495in, -0.297in) {\drawonestar{}};
+\node[inner sep=0pt] at (-0.297in, -0.297in) {\drawtwostar{}};
+\node[inner sep=0pt] at (-0.099in, -0.297in) {\drawtwostar{}};
+\node[inner sep=0pt] at (0.099in, -0.297in) {\drawonestar{}};
+\node[inner sep=0pt] at (0.297in, -0.297in) {\drawonestar{}};
+\node[inner sep=0pt] at (0.495in, -0.297in) {\drawtwostar{}};
+\node[inner sep=0pt] at (0.693in, -0.297in) {\drawonestar{}};
+\node[inner sep=0pt] at (0.891in, -0.297in) {\drawtwostar{}};
+
+\node[inner sep=0pt] at (-0.891in, -0.495in) {\drawthreestar{}};
+\node[inner sep=0pt] at (-0.693in, -0.495in) {\drawfourstar{}};
+\node[inner sep=0pt] at (-0.495in, -0.495in) {\drawthreestar{}};
+\node[inner sep=0pt] at (-0.297in, -0.495in) {\drawfourstar{}};
+\node[inner sep=0pt] at (-0.099in, -0.495in) {\drawthreestar{}};
+\node[inner sep=0pt] at (0.099in, -0.495in) {\drawfourstar{}};
+\node[inner sep=0pt] at (0.297in, -0.495in) {\drawthreestar{}};
+\node[inner sep=0pt] at (0.495in, -0.495in) {\drawfourstar{}};
+\node[inner sep=0pt] at (0.693in, -0.495in) {\drawthreestar{}};
+\node[inner sep=0pt] at (0.891in, -0.495in) {\drawfourstar{}};
+
+\node[inner sep=0pt] at (-0.891in, -0.693in) {\drawonestar{}};
+\node[inner sep=0pt] at (-0.693in, -0.693in) {\drawtwostar{}};
+\node[inner sep=0pt] at (-0.495in, -0.693in) {\drawtwostar{}};
+\node[inner sep=0pt] at (-0.297in, -0.693in) {\drawonestar{}};
+\node[inner sep=0pt] at (-0.099in, -0.693in) {\drawonestar{}};
+\node[inner sep=0pt] at (0.099in, -0.693in) {\drawtwostar{}};
+\node[inner sep=0pt] at (0.297in, -0.693in) {\drawonestar{}};
+\node[inner sep=0pt] at (0.495in, -0.693in) {\drawtwostar{}};
+\node[inner sep=0pt] at (0.693in, -0.693in) {\drawtwostar{}};
+\node[inner sep=0pt] at (0.891in, -0.693in) {\drawonestar{}};
+
+\node[inner sep=0pt] at (-0.891in, -0.891in) {\drawfourstar{}};
+\node[inner sep=0pt] at (-0.693in, -0.891in) {\drawthreestar{}};
+\node[inner sep=0pt] at (-0.495in, -0.891in) {\drawfourstar{}};
+\node[inner sep=0pt] at (-0.297in, -0.891in) {\drawthreestar{}};
+\node[inner sep=0pt] at (-0.099in, -0.891in) {\drawthreestar{}};
+\node[inner sep=0pt] at (0.099in, -0.891in) {\drawfourstar{}};
+\node[inner sep=0pt] at (0.297in, -0.891in) {\drawthreestar{}};
+\node[inner sep=0pt] at (0.495in, -0.891in) {\drawfourstar{}};
+\node[inner sep=0pt] at (0.693in, -0.891in) {\drawthreestar{}};
+\node[inner sep=0pt] at (0.891in, -0.891in) {\drawfourstar{}};
+
+\node[draw, line width=0.25mm,minimum width=1.99in,minimum height=1.99in] at (0in,0in) {\phantom{}};
+\end{tikzpicture}
+\end{document}
